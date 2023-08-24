@@ -1,0 +1,278 @@
+body{
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-family: 'Courgette', cursive;
+}
+h1{
+    color: #fff;
+}
+.p-1{
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.escrito{
+    font-weight: 700;
+    color: #fff;
+
+}
+.reseña{
+    color: #fff;
+    text-align: center;
+}
+.btn-profile{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.img-circular{
+    width:200px;
+    height:200px;
+    border-radius:160px;
+    border:5px solid #666;
+    position: relative;
+}
+.logo{
+    width: 147px;
+    height: 50px;
+}
+
+nav li{
+    padding: 5px 30px;
+}
+nav li:hover{
+    background-color:  #FFCB31;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/*Fondo degradado*/
+.gradient-bg-animation{
+
+    background: rgb(189, 189, 189); /*Usamos un background por defecto*/
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(38, 143, 255) 0%, rgba(150,126,197,1) 48%, rgba(0,255,222,1) 100%);
+    background-size: 300% 100%; /*Asignamos un ancho para el background del 300% y altura 100%*/
+    animation: gradient 15s ease infinite; /*'gradient' es el nombre de la animación que crearemos, tarda en completarse 15s y vuelve a empezar infinitamente*/
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/*Fin Fondo degradado*/
+
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration:none;
+    font-family:'Montserrat', Helvetica, sans-serif;
+    font-weight:700;
+    font-size:17px;
+    letter-spacing: 0.045em;
+}
+
+.btn svg {
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+.btn svg rect {
+    //stroke: #EC0033;
+    stroke-width: 4;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.btn span{
+  background: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding-bottom: 100px;
+
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin: 15px; /* Reducir el margen para dispositivos más pequeños */
+    background: #012fff;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(12, 0, 183, 0.5);
+    transition: all .4s ease-in-out;
+  }
+
+  /* Ajustar tamaño de los iconos para pantallas pequeñas */
+  @media (max-width: 576px) {
+    .buttons a {
+      font-size: 20px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+    }
+  }7
+    /* Fin tamaño de los iconos para pantallas pequeñas */
+
+  .buttons a:hover {
+    transform: scale(1.2);
+    background-color: #61b3ff;
+    color: #ffffff;
+  }
+.bg-portafolio{
+    background-color: #FFEEF4;
+}
+  .card:hover{
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+
+.bg-boton{
+    background-color: #66b10a;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 15pt;
+    margin-bottom: 30px;    
+}
+
+.bg-boton:hover{
+    background-color: #94C954;
+}
+
+.bg-boton-donar{
+    background-color: #46770a;
+    stroke: #f1f1f1;
+    border: solid; 3px;
+    border-radius: 30px;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 15pt;
+    margin-bottom: 30px;    
+}
+.bg-boton-donar:hover{
+    background-color: #94C954;
+}
+
+.h5-card{
+    font-weight: 700;
+    text-align: center;
+    font-size: 17px;   
+}
+
+.linea{
+width: 100px;
+height: 5px;
+background-color: #94C954;
+}
+.logofooter{
+    width: 147px;
+    height: 50px;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .card {
+        margin-bottom: 20px;
+    }
+  }
+  .social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 100px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-googleplus {background: #d95232;}
+	.social ul li .icon-pinterest {background: #ae181f;}
+	.social ul li .icon-mail {background: #666666;}
+    .social ul li .icon-whatsapp {background: #18b339;}
+
+	.social ul li a:hover {
+		background: #0C3C59; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+    .carrusel-mascotas{
+        background: none;
+        stroke: #FFCB31; 
+    }
+    .card{
+        padding=0;
+        
+      }
+      .card-wrapper{
+        
+      }
+
+      .menu-top{
+        background: #0C3C59;
+        margin-top: 0;
+      }
+      #contacto {
+        background-image: linear-gradient(to bottom right, red, yellow);
+      }
+      .boton-top{
+
+      }
